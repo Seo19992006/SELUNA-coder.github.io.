@@ -1,0 +1,1128 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #2c3e50;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.search-box input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+    margin-top: 70px;
+    height: 700px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Styles for the hero background image */
+.hero .hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area */
+    z-index: -1; /* Place the image behind the content */
+}
+
+/* Overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* Dark overlay */
+    z-index: 0; /* Place the overlay between the image and content */
+}
+
+/* Villa Sections */
+.featured-villas,
+.category {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+}
+
+.featured-villas h2,
+.category h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.villa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.horizontal-villa-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+    gap: 2rem; /* Keep the same gap as the grid */
+    padding-bottom: 1rem; /* Add some padding for the scrollbar if it appears */
+}
+
+.horizontal-villa-row .villa-card {
+    flex: 0 0 auto; /* Prevent shrinking and do not grow */
+    width: 300px; /* Set a fixed width for horizontal display */
+}
+
+.villa-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.villa-card:hover {
+    transform: translateY(-5px);
+}
+
+.villa-images {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.villa-images-wrapper {
+    display: block; /* Change from flex to block for vertical stacking */
+    overflow: hidden; /* Hide any overflow instead of adding scrollbar */
+    padding: 0; /* Remove padding if not needed for scrollbar */
+}
+
+.villa-images-wrapper img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure each image takes its own line */
+    border-radius: 8px; /* Keep the border-radius */
+    margin-bottom: 10px; /* Add space between vertically stacked images */
+    flex-shrink: 0; /* Keep this rule */
+}
+
+.villa-images-wrapper img:last-child {
+    margin-bottom: 0; /* No margin after the last image */
+}
+
+.villa-info {
+    padding: 1.5rem;
+    position: relative; /* Ensure proper stacking context */
+    z-index: 6; /* Ensure villa-info is above swiper elements */
+    margin-top: 10px; /* Add some space between image area and text */
+    text-align: center; /* Center the content within villa-info */
+}
+
+.villa-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center; /* Ensure h3 is centered */
+}
+
+.villa-info ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the ul element */
+    padding: 0; /* Remove default padding */
+}
+
+.villa-info li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: -webkit-center; /* Center the li content for better compatibility */
+    text-align: center; /* Center the li content */
+}
+
+.villa-info i {
+    color: #3498db;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+/* Category-specific styles */
+.garden {
+    background-color: #fff;
+}
+
+.center {
+    background-color: #fff;
+}
+
+.lake {
+    background-color: #fff;
+}
+
+/* Style for section titles with orange background */
+.garden h2,
+.center h2,
+.lake h2,
+.news-section h2 {
+    background-color: #e67e22; /* Orange color matching the image */
+    color: #fff; /* White text */
+    text-align: left; /* Align text to the left */
+    padding: 1rem 5%; /* Add padding for spacing, matching section horizontal padding */
+    margin-bottom: 2rem; /* Keep existing margin below the title */
+    font-size: 1.2rem; /* Reduced font size for titles */
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* News Section */
+.news-section {
+    padding: 4rem 5%;
+    background-color: #fff;
+}
+
+.news-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.article-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 1.5rem;
+}
+
+.article-content h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.article-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more-link {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.read-more-link::after {
+    content: " ->";
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-info {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.contact-info i {
+    color: #3498db;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+
+.hotline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3498db;
+    margin: 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #465c75; /* Dark blue background color from image */
+    color: #fff; /* Ensure base text color is white */
+    padding: 3rem 5%; /* Add padding */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for columns */
+    gap: 3rem; /* Increase gap between columns */
+    margin-bottom: 2rem; /* Keep margin below content */
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #fff; /* White color for headers */
+    font-weight: 700; /* Bold font for headers as in image */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ccc; /* Lighter color for links as in image */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff; /* White color on hover */
+}
+
+.footer-section p {
+    color: #ccc; /* Lighter color for paragraphs */
+    margin-bottom: 0.5rem; /* Add margin below paragraphs */
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust logo size */
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem; /* Add space above social links */
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #fff; /* White color for social icons */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc; /* Lighter color on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #ccc; /* Lighter color for copyright text */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out copyright and social links */
+    align-items: center; /* Vertically align items */
+}
+
+#footer-map-placeholder {
+    border-radius: 5px; /* Add rounded corners to map placeholder */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .search-box {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Contact Page Styles */
+.contact-page {
+    padding: 4rem 5%; /* Add padding */
+    background-color: #f9f9f9; /* Light grey background as in image */
+    margin-top: 70px; /* Add margin top to clear fixed header */
+}
+
+.contact-page-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, responsive */
+    gap: 3rem; /* Gap between columns */
+}
+
+.contact-info-map h2,
+.contact-form-section h2 {
+    color: #2c3e50; /* Dark text color */
+    font-size: 2rem; /* Header size */
+    margin-bottom: 1.5rem; /* Space below header */
+    position: relative; /* Needed for underline */
+    padding-bottom: 0.5rem; /* Space for underline */
+}
+
+.contact-info-map h2::after,
+.contact-form-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; /* Underline thickness */
+    width: 50px; /* Underline width */
+    background-color: #e67e22; /* Orange underline color */
+}
+
+.about-us-content h3 {
+     color: #2c3e50;
+     margin-bottom: 1rem;
+     font-size: 1.5rem; /* Title size for 'BOOKING DA LAT' */
+}
+
+.about-us-content p {
+     color: #666; /* Paragraph text color */
+     margin-bottom: 0.5rem;
+}
+
+.contact-logo {
+    max-width: 200px; /* Adjust logo size in contact section */
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    margin-top: 2rem; /* Space above the map */
+}
+
+.map-container iframe {
+    border-radius: 5px; /* Rounded corners for map */
+}
+
+/* Contact Form Styles */
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600; /* Label font weight */
+    color: #555; /* Label color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form .btn {
+    display: inline-block; /* Make button inline-block */
+    width: auto; /* Auto width for the button */
+    padding: 0.8rem 2rem; /* Adjust button padding */
+    font-size: 1rem; /* Button font size */
+}
+
+.news-section .article-card .read-more-link::after {
+    content: " ->";
+}
+
+/* New styles for the Reviews page sidebar */
+.page-content {
+    padding-top: 100px; /* Adjust based on header height */
+    padding: 4rem 5%;
+}
+
+.container {
+    max-width: 1200px; /* Or a suitable max width */
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #666;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.category-header h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 0; /* Remove default margin from h2 */
+    padding: 0; /* Remove default padding from h2 */
+    background-color: transparent; /* Override orange background from index page */
+    color: #2c3e50; /* Set text color back to dark for category page */
+    text-align: left; /* Ensure left alignment */
+}
+
+.category-header .result-count {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Reuse existing .villa-grid and .villa-card styles for category pages */
+
+.featured-reviews-sidebar {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff; /* Assuming white background for the sidebar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 300px; /* Adjust width as needed based on image */
+    margin: 0 auto; /* Center the sidebar if it's the main content */
+}
+
+.featured-reviews-sidebar h3 {
+    background-color: #f0f0f0; /* Light grey background for title */
+    color: #333; /* Darker text for title */
+    padding: 10px 15px;
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-left: 5px solid #ff9800; /* Orange border on the left */
+}
+
+.featured-reviews-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-reviews-sidebar li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.featured-reviews-sidebar li:last-child {
+    border-bottom: none;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-item img {
+    width: 50px; /* Adjust size of icons/images */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Make images round like in the example */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.review-icon-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007bff; /* Blue background for date */
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.review-icon-date .date-num {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.review-icon-date .date-month {
+    font-size: 0.8em;
+}
+
+.review-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: normal; /* Adjust font weight */
+    color: #333;
+}
+
+.review-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Ensure icons in the title are styled */
+.featured-reviews-sidebar h3 i {
+    margin-right: 10px;
+    color: #ff9800; /* Orange color for icon */
+}
+
+/* Style for the specific "Hồ tuyền lâm" item with date */
+.review-item .review-icon-date + .review-details h4 {
+    margin-bottom: 0; /* Adjust margin if needed */
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination a.active {
+    background-color: #e67e22; /* Orange background */
+    color: #fff; /* White text */
+    border-color: #e67e22;
+}
+
+/* Style for the villa detail page */
+.villa-detail-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.villa-main-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.villa-sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.villa-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.villa-key-info ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.villa-key-info li {
+    font-size: 1rem;
+    color: #555;
+}
+
+.villa-key-info i {
+    color: #e67e22; /* Make icons orange */
+    margin-right: 0.5rem;
+}
+
+.villa-description h3,
+.villa-reviews h3,
+.similar-villas h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 0.5rem;
+}
+
+.villa-description p,
+.villa-description ul li {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.villa-reviews h4 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.review-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form textarea,
+.review-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+.review-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.booking-form-widget h3 {
+    color: #fff;
+    background-color: #3498db; /* Blue background for the booking form title */
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -1.5rem; /* Adjust to align with sidebar padding */
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.booking-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="text"],
+.booking-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .villa-detail-container {
+        flex-direction: column;
+    }
+
+    .villa-main-content,
+    .villa-sidebar {
+        flex: none;
+        width: 100%;
+    }
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-dots .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background-color: #333;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Swiper styles for Lake section */
+.lake-swiper {
+    width: 100%;
+    height: 200px; /* Set a fixed height or adjust as needed */
+}
+
+.lake-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.lake-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 8px; /* Apply border-radius to the image */
+}
+
+/* Swiper styles for Center section */
+.center-swiper {
+    width: 100%;
+    height: 200px; /* Set a fixed height or adjust as needed */
+}
+
+.center-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.center-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 8px; /* Apply border-radius to the image */
+}
+
+/* Swiper styles for Garden section */
+.garden-swiper {
+    width: 100%;
+    height: 200px; /* Set a fixed height or adjust as needed */
+}
+
+.garden-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.garden-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 8px; /* Apply border-radius to the image */
+}
+
+/* Swiper styles for generic Swiper container (used on villa-noi-bat.html) */
+.swiper-container {
+    width: 100%;
+    height: 200px; /* Set a fixed height or adjust as needed, consistent with other Swipers */
+}
+
+.swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 8px; /* Apply border-radius to the image */
+} 

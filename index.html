@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELUNA STAY - Nơi Lưu Trú Tuyệt Vời</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SELUNA STAY</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Trang chủ</a></li>
+                <li><a href="villa-noi-bat.html">Villa nổi bật</a></li>
+                <li><a href="ho-tuyen-lam.html">Hồ Tuyền Lâm</a></li>
+                <li><a href="gan-trung-tam-page2.html">Gần trung tâm</a></li>
+                <li><a href="san-vuon.html">Sân vườn</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="C:\Users\seo\Desktop\SELUNA\images\hero\placeholder_hero1.jpg.jpg" alt="SELUNA STAY Hero Image" class="hero-background-image">
+        <div class="hero-content">
+            <h1>SELUNA STAY</h1>
+            <p>"Một chuyến đi, vô vàn kỷ niệm"</p>
+        </div>
+    </section>
+
+    <!-- Featured Villas Section -->
+    <section id="villas" class="featured-villas">
+        <h2>Villa Nổi Bật</h2>
+        <div class="villa-grid">
+            <div class="villa-card">
+                <div class="villa-images">
+                    <div class="villa-images-wrapper">
+                        <img src="images/villas/Villa_1/villa _1.jpg" alt="YELLOW HOUSE (V275) - Image 1">
+                        <img src="images/villas/Villa_1/villa_2.jpg" alt="YELLOW HOUSE (V275) - Image 2">
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>YELLOW HOUSE (V275)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường 11</li>
+                        <li><i class="fas fa-bed"></i> 4 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Sân vườn BBQ</li>
+                        <li><i class="fas fa-users"></i> 8 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <!-- More villa cards will be added dynamically via JavaScript -->
+            <!-- Added 3 more villa cards -->
+            <div class="villa-card">
+                <div class="villa-images">
+                    <div class="villa-images-wrapper">
+                        <img src="images/villas/Villa_2/villa_2.1.jpg" alt="SUNSET VILLA (V123) - Image 1">
+                        <img src="images/villas/Villa_2/villa_2.2.jpg" alt="SUNSET VILLA (V123) - Image 2">
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>SUNSET VILLA (V123)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường 10</li>
+                        <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> View hoàng hôn</li>
+                        <li><i class="fas fa-users"></i> 6 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="villa-card">
+                <div class="villa-images">
+                    <div class="villa-images-wrapper">
+                        <img src="images/villas/Vill_3/villa_3.1.jpg" alt="PINE VIEW HOUSE (V456) - Image 1">
+                        <img src="images/villas/Vill_3/villa_3.2.jpg" alt="PINE VIEW HOUSE (V456) - Image 2">
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>PINE VIEW HOUSE (V456)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường 4</li>
+                        <li><i class="fas fa-bed"></i> 4 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Gần rừng thông</li>
+                        <li><i class="fas fa-users"></i> 8 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="villa-card">
+                <div class="villa-images">
+                    <div class="villa-images-wrapper">
+                        <img src="images/villas/Villa_4/villa_4.1.jpg" alt="CITYSCAPE VILLA (V789) - Image 1">
+                        <img src="images/villas/Villa_4/villa_4.2.jpg" alt="CITYSCAPE VILLA (V789) - Image 2">
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>CITYSCAPE VILLA (V789)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường 1</li>
+                        <li><i class="fas fa-bed"></i> 5 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> View thành phố</li>
+                        <li><i class="fas fa-users"></i> 10 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#all-villas" class="btn">Xem thêm</a>
+        </div>
+    </section>
+
+    <!-- Garden Villas Section -->
+    <section id="lake" class="category garden">
+        <h2><i class="fas fa-seedling"></i> Hồ Tuyền Lâm</h2>
+        <div class="villa-grid">
+            <!-- Thêm các card villa mẫu cho Hồ Tuyền Lâm -->
+            <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container lake-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/lake/lake_1/lake_1.1.jpg" alt="LAKE VIEW VILLA - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_1/lake_1.3.jpg" alt="LAKE VIEW VILLA - Image 3"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_1/l.jpg" alt="LAKE VIEW VILLA - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_1/lake_1.4.jpg" alt="LAKE VIEW VILLA - Image 4"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>LAKE VIEW VILLA</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Gần Hồ Tuyền Lâm</li>
+                        <li><i class="fas fa-bed"></i> 5 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> View hồ đẹp</li>
+                        <li><i class="fas fa-users"></i> 10 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container lake-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.0.jpg" alt="PINE HILL VILLA - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.1.jpg" alt="PINE HILL VILLA - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.2.jpg" alt="PINE HILL VILLA - Image 3"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.3.jpg" alt="PINE HILL VILLA - Image 4"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.4.jpg" alt="PINE HILL VILLA - Image 5"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.5.jpg" alt="PINE HILL VILLA - Image 6"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.6.jpg" alt="PINE HILL VILLA - Image 7"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_2/lake_2.7.jpg" alt="PINE HILL VILLA - Image 8"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>PINE HILL VILLA</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Khu vực Hồ Tuyền Lâm</li>
+                        <li><i class="fas fa-bed"></i> 4 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Yên tĩnh</li>
+                        <li><i class="fas fa-users"></i> 8 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <!-- Các card villa Hồ Tuyền Lâm khác -->
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container lake-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.0.jpg" alt="SERENE LAKE VILLA - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.1.jpg" alt="SERENE LAKE VILLA - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.2.jpg" alt="SERENE LAKE VILLA - Image 3"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.3.jpg" alt="SERENE LAKE VILLA - Image 4"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.4.jpg" alt="SERENE LAKE VILLA - Image 5"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.5.jpg" alt="SERENE LAKE VILLA - Image 6"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.6.jpg" alt="SERENE LAKE VILLA - Image 7"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.7.jpg" alt="SERENE LAKE VILLA - Image 8"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.8.jpg" alt="SERENE LAKE VILLA - Image 9"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.9.jpg" alt="SERENE LAKE VILLA - Image 10"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.10.jpg" alt="SERENE LAKE VILLA - Image 11"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.11.jpg" alt="SERENE LAKE VILLA - Image 12"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.12.jpg" alt="SERENE LAKE VILLA - Image 13"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_3/lake_3.13.jpg" alt="SERENE LAKE VILLA - Image 14"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>SERENE LAKE VILLA</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Gần Hồ Tuyền Lâm</li>
+                        <li><i class="fas fa-bed"></i> 4 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> View đẹp</li>
+                        <li><i class="fas fa-users"></i> 8 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container lake-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.0.jpg" alt="PINE FOREST LAKESIDE - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.1.jpg" alt="PINE FOREST LAKESIDE - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.2.jpg" alt="PINE FOREST LAKESIDE - Image 3"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.3.jpg" alt="PINE FOREST LAKESIDE - Image 4"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.4.jpg" alt="PINE FOREST LAKESIDE - Image 5"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.5.jpg" alt="PINE FOREST LAKESIDE - Image 6"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.6.jpg" alt="PINE FOREST LAKESIDE - Image 7"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.7.jpg" alt="PINE FOREST LAKESIDE - Image 8"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.8.jpg" alt="PINE FOREST LAKESIDE - Image 9"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.9.jpg" alt="PINE FOREST LAKESIDE - Image 10"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.10.jpg" alt="PINE FOREST LAKESIDE - Image 11"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.11.jpg" alt="PINE FOREST LAKESIDE - Image 12"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.15.jpg" alt="PINE FOREST LAKESIDE - Image 13"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.12.jpg" alt="PINE FOREST LAKESIDE - Image 14"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.17.jpg" alt="PINE FOREST LAKESIDE - Image 15"></div>
+                            <div class="swiper-slide"><img src="images/lake/lake_4/lake_4.18.jpg" alt="PINE FOREST LAKESIDE - Image 16"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>VILLA TUYỀN LÂM 2 ĐÀ LẠT (V177)</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Khu vực Hồ Tuyền Lâm</li>
+                        <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Gần rừng thông</li>
+                        <li><i class="fas fa-users"></i> 6 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#all-lake" class="btn">Xem thêm</a>
+        </div>
+    </section>
+
+    <!-- Center Villas Section -->
+    <section id="center" class="category center">
+        <h2><i class="fas fa-city"></i> Gần Trung Tâm</h2>
+        <div class="villa-grid">
+             <!-- Thêm các card villa mẫu cho Gần Trung Tâm -->
+            <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container center-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/center/villa_center/villa-center1.1.jpg" alt="Villa Image 1"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center/villa-center1.2.jpg" alt="Villa Image 2"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center/villa-center1.3.jpg" alt="Villa Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <h3>     CITY OASIS VILLA</h3>
+                    <ul>
+                               <li><i class="fas fa-map-marker-alt"></i> Phường A</li>
+                               <li><i class="fas fa-bed"></i> 2 phòng ngủ</li>
+                               <li><i class="fas fa-tree"></i> Gần chợ đêm</li>
+                              <li><i class="fas fa-users"></i> 4 người</li>
+                     </ul>
+                <a href="#details" class="btn">Xem chi tiết</a>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container center-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/center/villa_center1/villa_center1_1.0.jpg" alt="URBAN RETREAT - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center1/villa_center1_1.1.jpg" alt="URBAN RETREAT - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center1/villa_center1_1.2.jpg" alt="URBAN RETREAT - Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <h3>      URBAN RETREAT</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Phường B</li>
+                    <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                    <li><i class="fas fa-tree"></i> Tiện nghi đầy đủ</li>
+                    <li><i class="fas fa-users"></i> 6 người</li>
+                </ul>
+                <a href="#details" class="btn">Xem chi tiết</a>
+            </div>
+            <!-- Các card villa Gần Trung Tâm khác -->
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container center-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/center/villa_center2/center2.0.jpg" alt="Villa Image 1"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center2/center2.1.jpg" alt="Villa Image 2"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center2/center2.2.jpg" alt="Villa Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <h3>CENTRAL HUB VILLA</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Phường C</li>
+                    <li><i class="fas fa-bed"></i> 2 phòng ngủ</li>
+                    <li><i class="fas fa-tree"></i> Gần các điểm tham quan</li>
+                    <li><i class="fas fa-users"></i> 4 người</li>
+                </ul>
+                <a href="#details" class="btn">Xem chi tiết</a>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container center-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/center/villa_center3/center3.0.jpg" alt="Villa Image 1"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center3/center3.1.jpg" alt="Villa Image 2"></div>
+                            <div class="swiper-slide"><img src="images/center/villa_center3/center3.2.jpg" alt="Villa Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <h3>DOWNTOWN ESCAPE</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Phường D</li>
+                    <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                    <li><i class="fas fa-tree"></i> Khu vực sầm uất</li>
+                    <li><i class="fas fa-users"></i> 6 người</li>
+                </ul>
+                <a href="#details" class="btn">Xem chi tiết</a>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#all-center" class="btn">Xem thêm</a>
+        </div>
+    </section>
+
+    <!-- Lake Villas Section -->
+    <section id="garden" class="category lake">
+        <h2><i class="fas fa-water"></i> Sân Vườn</h2>
+        <div class="villa-grid">
+            <!-- Thêm các card villa mẫu cho Sân Vườn -->
+            <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container garden-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/garden/villa_garden1/villa_garden1.0.jpg" alt="GREEN GARDEN VILLA - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden1/villa_garden1.1.jpg" alt="GREEN GARDEN VILLA - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden1/villa_garden1.2.jpg" alt="GREEN GARDEN VILLA - Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>GREEN GARDEN VILLA</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường X</li>
+                        <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Sân vườn rộng</li>
+                        <li><i class="fas fa-users"></i> 6 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container garden-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/garden/villa_garden2/villa_garden2.0.jpg" alt="BLOOMING HOUSE - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden2/villa_garden2.1.jpg" alt="BLOOMING HOUSE - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden2/villa_garden2.3.jpg" alt="BLOOMING HOUSE - Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>BLOOMING HOUSE</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường Y</li>
+                        <li><i class="fas fa-bed"></i> 4 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Khu vườn xanh mát</li>
+                        <li><i class="fas fa-users"></i> 8 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <!-- Các card villa Sân Vườn khác -->
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container garden-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/garden/villa_garden3/villa_garden3.0.jpg" alt="SECLUDED GARDEN RETREAT - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden3/villa_garden3.1.jpg" alt="SECLUDED GARDEN RETREAT - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden3/villa_garden3.2.jpg" alt="SECLUDED GARDEN RETREAT - Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>SECLUDED GARDEN RETREAT</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường Z</li>
+                        <li><i class="fas fa-bed"></i> 5 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Khu vườn riêng</li>
+                        <li><i class="fas fa-users"></i> 10 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+             <div class="villa-card">
+                <div class="villa-images">
+                    <!-- Add Swiper container -->
+                    <div class="swiper-container garden-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Add swiper-slide class to images -->
+                            <div class="swiper-slide"><img src="images/garden/villa_garden4/villa_garden4.0.jpg" alt="BLOOMING COURTYARD VILLA - Image 1"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden4/villa_garden4.1.jpg" alt="BLOOMING COURTYARD VILLA - Image 2"></div>
+                            <div class="swiper-slide"><img src="images/garden/villa_garden4/villa_garden4.2.jpg" alt="BLOOMING COURTYARD VILLA - Image 3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="villa-info">
+                    <h3>BLOOMING COURTYARD VILLA</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Phường W</li>
+                        <li><i class="fas fa-bed"></i> 3 phòng ngủ</li>
+                        <li><i class="fas fa-tree"></i> Sân trong có hoa</li>
+                        <li><i class="fas fa-users"></i> 6 người</li>
+                    </ul>
+                    <a href="#details" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#all-garden" class="btn">Xem thêm</a>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <h2><i class="fas fa-thumbs-up"></i> Tin Tức & Chia Sẻ</h2>
+        <div class="article-grid">
+            <!-- News articles based on the provided image -->
+            <div class="article-card">
+                <img src="images/review/review2.jpg" alt="Ngắm đồi hoa Đà Lạt">
+                <div class="article-content">
+                    <h4>Ngắm đồi hoa Đà Lạt, hòa mình vào không gian văn hóa cồng chiêng</h4>
+                    <p>Đến Đà Lạt trong những ngày đầu tháng 12, du khách không chỉ hưởng không khí se lạnh mà còn bất ngờ với những đồi hoa muôn sắc...</p>
+                    <a href="#readmore" class="read-more-link">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/review/review4.jpg" alt="Phát triển xanh Đà Lạt">
+                <div class="article-content">
+                    <h4>Phát triển xanh, không thể tổn hại những yếu tố làm nên Đà Lạt</h4>
+                    <p>Xứ sở ngàn hoa đã bước qua giai đoạn tăng trưởng nóng của du lịch. Đà Lạt muốn phát triển thành một đô thị du lịch bền vững...</p>
+                    <a href="#readmore" class="read-more-link">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/review/review1.jpg" alt="Du lịch xanh Đà Lạt">
+                <div class="article-content">
+                    <h4>Đà Lạt phát triển du lịch xanh: Bền vững bắt đầu từ cộng đồng</h4>
+                    <p>Khó có thể phát triển du lịch bền vững nếu không tiến hành cùng các hoạt động khai thác hợp lý, cân bằng nhằm giữ gìn...</p>
+                    <a href="#readmore" class="read-more-link">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-more">
+            <a href="#all-news" class="btn">XEM THÊM</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                 <h3>SELUNA STAY</h3>
+                 <p>Địa chỉ: Võ Trường Toản, Phường 8, Thành Phố Đà Lạt, Tỉnh Lâm Đồng</p>
+                 <p>Hotline: 0837665752</p>
+                 <p>Email: Selunastay00@gmail.com</p>
+                 <p>Website: Selunastay00.com</p>
+             </div>
+              <div class="footer-section">
+                   <h3>HOTLINE<br>TƯ VẤN VÀ HỖ TRỢ 24/7</h3>
+                   <p>0837665752</p>
+                   <p>Selunastay00@gmail.com</p>
+              </div>
+              <div class="footer-section">
+                   <h3>Liên kết nhanh</h3>
+                   <ul>
+                       <li><a href="#home">Trang chủ</a></li>
+                       <li><a href="#villas">Villa nổi bật</a></li>
+                       <li><a href="#garden">Sân vườn</a></li>
+                       <li><a href="#center">Gần trung tâm</a></li>
+                       <li><a href="#lake">Hồ Tuyền Lâm</a></li>
+                       <li><a href="#reviews">Review</a></li>
+                   </ul>
+               </div>
+              <div class="footer-section">
+                   <h3>Chính sách</h3> <!-- Changed Policies title as seen in previous image -->
+                   <ul>
+                      <li><a href="#booking-policy">Chính sách đặt phòng</a></li>
+                      <li><a href="#payment">Thanh toán</a></li>
+                      <li><a href="#cancellation">Chính sách hủy phòng</a></li>
+                  </ul>
+              </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SELUNA STAY. All rights reserved.</p>
+             <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for the Lake section
+        var lakeSwiper = new Swiper('.lake-swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        // Initialize Swiper for the Center section
+        var centerSwiper = new Swiper('.center-swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        // Initialize Swiper for the Garden section
+        var gardenSwiper = new Swiper('.garden-swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
